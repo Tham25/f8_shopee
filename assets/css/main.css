@@ -244,6 +244,9 @@
 /* Authen Modal */
 .auth-form {
     width: 500px;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    overflow: hidden;
 }
 
 .auth-form__container {
@@ -301,6 +304,48 @@
     color: var(--primary-color);
 }
 
-.auth-form__controls {
+.auth-form__control {
     margin-top: 80px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__control-back {
+    margin-right: 8px;
+}
+
+.auth-form__socials {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 36px;
+}
+
+.auth-form__socials-icon {
+    font-size: 1.8rem;
+}
+
+.auth-form__socials-logo-img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+}
+
+.auth-form__socials-logo-img > img {
+    width: 100%;
+}
+
+.auth-form__socials-title {
+    padding: 0 32px;
+}
+
+.auth-form__socials--fb {
+    color: var(--white-color);
+    background-color: #3A5A98;
+}
+
+.auth-form__socials--gg {
+    color: var(--text-color);
 }
