@@ -11,13 +11,15 @@
 .header__navbar-list {
     list-style: none;
     padding-left: 0;/*the ul mac dinh padding 40px*/
+    display: flex;
     margin-top: 6px;
 }
 
 .header__navbar-item {
-    display: inline-block;
+    display: flex;
     margin: 0 8px;
     position: relative;
+    align-items: center;
 }
 
 .header__navbar-item, 
@@ -72,6 +74,87 @@
     color: var(--white-color);
 }
 
+/*  header navbar user*/
+.header__navbar-user {
+    display: flex;
+    align-items: center;
+    height: calc(var(--navbar-height) - 16px);
+    position: relative;
+}
+
+.header__navbar-user-avatar {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header__navbar-user-name {
+    margin-left: 8px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.header__navbar-user:hover .header__navbar-user-menu {
+    display: block;
+}
+
+.header__navbar-user-menu {
+    position: absolute;
+    z-index: 1;
+    padding-left: 0;
+    list-style: none;
+    top: calc(100% + 10px);
+    right: 0;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    width: 160px;
+    box-shadow: 0 2px 3px #ccc;
+    display: none;
+}
+
+.header__navbar-user-menu::before {
+    content: "";
+    border-style: solid;
+    border-width: 20px 28px;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 4px;
+    top: -32px;
+}
+
+.header__navbar-user-menu::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border: 20px solid transparent;
+    top: -15px;
+    width: 60%;
+}
+
+.header__navbar-user-item a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    padding: 8px 16px;
+    display: block;
+}
+
+.header__navbar-user-item a:hover {
+    background-color: #fafafa;
+}
+
+.header__navbar-user-item a:first-child {
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.header__navbar-user-item a:last-child {
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
 
 /* ===========Begin: Header QR code========== */
 .header__qr {
@@ -652,7 +735,7 @@
     color: var(--primary-color);
     font-size: 1.4rem;
     line-height: 1.4rem;
-    border-radius: 10PX;
+    border-radius: 10px;
     border: 2px solid #EE4D2D;
 }
 
