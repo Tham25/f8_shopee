@@ -24,7 +24,7 @@
 
 .header__navbar-item, 
 .header__navbar-item-link {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
@@ -65,6 +65,10 @@
     text-decoration: none;
 }
 
+.header_navbar-icon-link:nth-child(2) {
+    margin-left: 3px;
+}
+
 .header__navbar-icon {
     margin: 0 4px;
 }
@@ -90,11 +94,9 @@
 }
 
 .header__navbar-user-name {
-    margin-left: 8px;
-    font-size: 1.5rem;
+    margin-left: 4px;
+    font-size: 1.4rem;
     font-weight: 400;
-    display: flex;
-    align-items: center;
 }
 
 .header__navbar-user:hover .header__navbar-user-menu {
@@ -132,6 +134,10 @@
     border: 20px solid transparent;
     top: -15px;
     width: 60%;
+}
+
+.header__navbar-user-item--sparate {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .header__navbar-user-item a {
@@ -206,19 +212,20 @@
 /* =======Begin: Header notification============ */
 .header__notify {
     position: absolute;
+    z-index: 1;
     top: 150%;
     right: 0;
     width: 404px;
-    border: 1px solid #D3D3D3;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
     background-color: var(--white-color);
     cursor: default;
     user-select: none;
     animation: headerNotifyGrowth ease-in 0.2s;
     -webkit-animation: headerNotifyGrowth ease-in 0.2s;
     will-change: opacity, transform;
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 32px) top;
     display: none;
-    z-index: 1;
 }
 
 .header__notify::before {
@@ -472,6 +479,11 @@
 
 .header__logo {
     width: 200px;
+}
+
+.header__logo-link {
+    color: transparent;
+    text-decoration: none;
 }
 
 .header__logo-img {
