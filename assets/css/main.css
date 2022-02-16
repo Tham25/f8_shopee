@@ -986,14 +986,27 @@
 
 /* Home-product item */
 .home-product-item {
+    display: block;
     position: relative;
     background-color: var(--white-color);
     margin-top: 10px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: transform ease-in 0.1s;
+    will-change: transform;
+    text-decoration: none;
+}
+
+.home-product-item:hover {
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+    transform:translateY(-1px);
 }
 
 .home-product-item__img {
     padding-top: 100%;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .home-product-item__name {
@@ -1066,6 +1079,7 @@ i.home-product-item__like-fill {
 .home-product-item__sold {
     font-size: 1.2rem;
     margin-left: 4px;
+    color: var(--text-color);
 }
 
 .home-product-item__origin {
