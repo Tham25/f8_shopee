@@ -999,8 +999,8 @@
     font-size: 1.2rem;
     font-weight: 400;
     color: var(--text-color);
-    line-height: 1.8rem;
-    height: 3.6rem;
+    line-height: 1.4rem;
+    height: 2.8rem;
     margin: 10px 10px 6px;
     overflow: hidden;
     display: block;
@@ -1031,7 +1031,7 @@
 .home-product-item__action {
     display: flex;
     justify-content: space-between;
-    margin: 6px 10px;
+    margin: 6px 10px 0;
     align-items: center;
 }
 
@@ -1054,21 +1054,26 @@ i.home-product-item__like-fill {
 
 .home-product-item__rating{
     font-size: 0.8rem;
-    margin-left: auto;
-    color: #ffce3d;
-}
-
-.home-product-item__rating i:last-child {
+    margin: -1px 0 0 auto;
     color:#e0e0e0;
 }
 
-.home-product-item__action-lable {
+.home-product-item__star--gold {
+    color: var(--star-gold-color);
+}
+
+.home-product-item__sold {
     font-size: 1.2rem;
     margin-left: 4px;
 }
 
 .home-product-item__origin {
-
+    margin: 6px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: #595959;
+    font-weight: 300;
 }
 
 .home-product-item__branch {
