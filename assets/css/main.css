@@ -173,6 +173,8 @@
     border-radius: 2px;
     display: none;
     animation: fadeIn ease-in 0.3s;
+    z-index: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .header__qr::before {
@@ -577,6 +579,7 @@
     border-radius: 2px;
     display: none;
     animation: fadeIn ease-in 0.1s;
+    z-index: 1;
 }
 
 .header__search-option::before {
@@ -635,6 +638,7 @@
     box-shadow: 0 0 5px #dbd6d6;
     overflow: hidden;
     display: none;
+    z-index: 1;
 }
 
 .header__search-history-heading {
@@ -701,6 +705,7 @@
     display: none;
     animation: fadeIn ease-in 0.2s;
     cursor: default;
+    z-index: 1;
 }
 
 .header__cart-list::before {
@@ -761,7 +766,9 @@
 
 .header__cart-list-item {
     padding-left: 0;
-    list-style: non;
+    list-style: none;
+    height: 33.33vh;/*view port - % do cao trinh duyet*/
+    overflow-y: auto;
 }
 
 .header__cart-item {
@@ -785,22 +792,30 @@
     margin-right: 12px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .header__cart-item-head {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 6px;
 }
 
 .header__cart-item-name {
     font-size: 1.3rem;
+    line-height: 1.6rem;
+    max-height: 3.2rem;
+    overflow: hidden;
     font-weight: 500;
     color: var(--text-color);
     margin: 0;
     text-align: left;
-    max-width: 210px;
+    flex: 1;
+    padding-right: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .header__cart-item-price {
@@ -869,6 +884,8 @@
     padding: 16px 16px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .category__heading-icon {
@@ -878,8 +895,9 @@
 
 .category-list {
     padding-left: 0;
+    padding-bottom: 5px;
     list-style: none;
-    margin-left: 15px;
+    margin: 0 15px;
 }
 
 .category-item--active .category-item__link {
@@ -990,8 +1008,7 @@
     position: relative;
     background-color: var(--white-color);
     margin-top: 10px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-radius: 2px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     transition: transform ease-in 0.1s;
     will-change: transform;
@@ -1007,6 +1024,9 @@
     padding-top: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top center;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
 .home-product-item__name {
@@ -1137,6 +1157,7 @@ i.home-product-item__like-fill {
     line-height: 1.5rem;
     text-align: center;
     padding: 3px 2px;
+    border-top-right-radius: 2px;
 }
 
 .home-product-item__sale-off::after {

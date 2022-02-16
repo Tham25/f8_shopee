@@ -148,6 +148,7 @@ html {
     margin: 0;
     border-radius: 2px;
     display: none;
+    z-index: 1;
 }
 
 .select-input__list::before {
