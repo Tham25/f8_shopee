@@ -1221,6 +1221,10 @@ i.home-product-item__like-fill {
     line-height: 1.4rem;
 }
 
+.footer__content-item:hover .footer__content-item__link{
+    color: var(--primary-color);
+}
+
 .footer__content-item__icon {
     margin-right: 8px;
     font-size: 1.6rem;
