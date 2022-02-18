@@ -18,7 +18,7 @@
         <header class="header">
             <div class="grid wide">
                 <!-- Begin header navbar -->
-                <nav class="header__navbar hide-on-moblie-tablet">
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--separate">
                             Vào cửa hàng trên ứng dụng F8-Shop
@@ -214,7 +214,10 @@
                                                 <span class="header__cart-item-description">
                                                     Thương hiệu: NIKE
                                                 </span>
-                                                <span class="header__cart-item-remove">Xóa</span>
+                                                <span class="header__cart-item-remove hide-on-mobile-tablet">Xóa</span>
+                                                <div class="header__cart-icon-remove display-on-mobile-tablet">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </li>
@@ -233,7 +236,10 @@
                                                 <span class="header__cart-item-description">
                                                     Thương hiệu: NIKE
                                                 </span>
-                                                <span class="header__cart-item-remove">Xóa</span>
+                                                <span class="header__cart-item-remove hide-on-mobile-tablet">Xóa</span>
+                                                <div class="header__cart-icon-remove display-on-mobile-tablet">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </li>
@@ -250,7 +256,10 @@
                                             </div>
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">Thương hiệu: no branch</span>
-                                                <span class="header__cart-item-remove">Xóa</span>
+                                                <span class="header__cart-item-remove hide-on-mobile-tablet">Xóa</span>
+                                                <div class="header__cart-icon-remove display-on-mobile-tablet">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </li>
@@ -269,7 +278,10 @@
                                                 <span class="header__cart-item-description">
                                                     Thương hiệu: NIKE
                                                 </span>
-                                                <span class="header__cart-item-remove">Xóa</span>
+                                                <span class="header__cart-item-remove hide-on-mobile-tablet">Xóa</span>
+                                                <div class="header__cart-icon-remove display-on-mobile-tablet">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </li>
@@ -288,7 +300,10 @@
                                                 <span class="header__cart-item-description">
                                                     Thương hiệu: NIKE
                                                 </span>
-                                                <span class="header__cart-item-remove">Xóa</span>
+                                                <span class="header__cart-item-remove hide-on-mobile-tablet">Xóa</span>
+                                                <div class="header__cart-icon-remove display-on-mobile-tablet">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </li>
@@ -305,7 +320,10 @@
                                             </div>
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">Thương hiệu: no branch</span>
-                                                <span class="header__cart-item-remove">Xóa</span>
+                                                <span class="header__cart-item-remove hide-on-mobile-tablet">Xóa</span>
+                                                <div class="header__cart-icon-remove display-on-mobile-tablet">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </li>
@@ -317,6 +335,28 @@
                 </div>
                 <!-- End header with search-->
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item"><a href="" class="header__sort-link">Liên quan</a></li>
+                <li class="header__sort-item header__sort-item--active"><a href="" class="header__sort-link">Mới nhất</a></li>
+                <li class="header__sort-item"><a href="" class="header__sort-link">Bán chạy</a></li>
+                <li class="header__sort-item">
+                    <div class="header__sort-price">
+                        Giá
+                        <div class="header__sort-price-icon">
+                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <ul class="header__sort-price-list">
+                            <li class="header__sort-price-item">
+                                <a href="" class="header__sort-price-link">Giá: Cao đến thấp</a>
+                            </li>
+                            <li class="header__sort-price-item">
+                                <a href="" class="header__sort-price-link">Giá: Thấp đến cao</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </header>
 
         <div id="app__container">
@@ -345,7 +385,7 @@
                         </nav>
                     </div>
                     <nav class="col l-10 m-12 c-12">
-                        <div class="home-filter hide-on-moblie-tablet">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">Sắp xếp theo</span>
                             <button class="home-filter__btn btn btn--primary">Phổ biến</button>
                             <button class="home-filter__btn btn">Mới nhất</button>
@@ -889,8 +929,7 @@
                     </div>    
                 </div>
             </div>
-            <div class="grid footer__bottom">
-                <div class="row">
+            <div class="footer__bottom">
                     <ul class="footer__policy-list">
                         <li class="footer__policy-list-item"><a href="">Chính sách bảo mật</a></li>
                         <li class="footer__policy-list-item"><a href="">Cơ chế hoạt động</a></li>
@@ -904,7 +943,6 @@
                         <li class="footer__info-item">Mã số doanh nghiệp: 0108838679 do Sở Kế Hoạch & Đầu Tư TP Hà Nội cấp lần đầu ngày 10/02/2015</li>
                         <li class="footer__info-item">© 2015 - Bản quyền thuộc về Công ty TNHH F8Pro123</li>
                     </ul>
-                </div>
             </div>
         </footer>
         <!-- Begin Modal layout -->

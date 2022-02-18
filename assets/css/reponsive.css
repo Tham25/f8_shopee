@@ -4,10 +4,41 @@
         --header-height: 68px;
         --navbar-height: 0px;
     }
-    .hide-on-moblie-tablet {
+    .hide-on-mobile-tablet {
         display: none;
     }
 
+    .display-on-mobile-tablet {
+        display: block;
+    }
+
+    .header {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .header__cart-list {
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+        width: 100%;
+        padding: 0 calc((100% - 644px) / 2);
+    }
+
+    .header__cart-list::before {
+        display: none;
+    }
+
+    .header__sort-bar {
+        display: flex;
+    }
+
+    .app__container {
+        margin-top: var(--header-height);
+    }
 }
 
 /* Tablet */

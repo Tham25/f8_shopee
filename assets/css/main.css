@@ -671,6 +671,109 @@
 }
 /* ============== End Header with search =============*/
 
+/* Begin: Header sort bar - Trên mobile và tablet*/
+.header__sort-bar {
+    display: none;
+    list-style:none;
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    box-shadow: 0 1px 4px #998d8d;
+}
+
+.header__sort-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    width: 25%;
+}
+
+.header__sort-item--active .header__sort-link{
+    color: var(--primary-color);
+}
+
+.header__sort-link {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 8px 0;
+    padding: 4px 0;
+    border-right: 1px solid #ebdcdc;
+    width: 100%;
+    text-align: center;
+}
+
+.header__sort-price {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.header__sort-price-icon {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+    font-size: 0.9rem;
+    color: #8d7d7d;
+}
+
+.header__sort-price-icon i:first-child {
+    position: relative;
+    top: 2px;
+}
+.header__sort-price-icon i:last-child {
+    position: relative;
+    top: -2px;
+}
+
+.header__sort-price:hover .header__sort-price-list{
+    display: block;
+}
+
+.header__sort-price-list {
+    position: absolute;
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+    top: calc(100% + 12px);
+    background-color: var(--white-color);
+    border-radius: 2px;
+    box-shadow: 0 1px 4px #998d8d;
+    display: none;
+}
+
+.header__sort-price-list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    top: -18px;
+    background-color: transparent;
+}
+
+.header__sort-price-item {
+    text-align: center;
+}
+
+.header__sort-price-link {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    padding: 12px 0;
+}
+
+.header__sort-price-link:hover {
+    background-color: #f5f5f5;
+    color: var(--primary-color);
+}
+
+/* End: header sort bar */
+
 /* ============== Begin Header cart =============*/
 .header__cart {
     width: 150px;
@@ -767,7 +870,7 @@
 .header__cart-list-item {
     padding-left: 0;
     list-style: none;
-    height: 33.33vh;/*view port - % do cao trinh duyet*/
+    max-height: 33.33vh;/*view port - % do cao trinh duyet*/
     overflow-y: auto;
 }
 
@@ -854,6 +957,18 @@
 .header__cart-item-remove:hover {
     cursor: pointer;
     color: var(--primary-color);
+}
+
+.header__cart-icon-remove {
+    padding: 0px 42px;
+    font-size: 1.6rem;
+    color: #6c6262;
+    display: none;
+}
+
+.header__cart-icon-remove:hover {
+    color: var(--primary-color);
+    cursor: pointer;
 }
 
 .header__cart-view-cart {
