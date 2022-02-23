@@ -129,9 +129,18 @@
                     </ul>
                 </nav>
                  <!-- End header navbar -->
-
                 <!-- Begin header with search -->
                 <div class="header-with-search">
+                    <div class="header__mobile">
+                        <lable for="mobile-navbar-checkbox" class="header__mobile-navbar">
+                            <i class="header__mobile-navbar-icon fa-solid fa-bars"></i>
+                        </lable>
+
+                        <label for="mobile-search-checkbox" class="header__mobile-search">
+                            <i class="header__mobile-search-icon fas fa-search"></i>
+                        </label>
+                    </div>
+
                     <div class="header__logo hide-on-tablet">
                         <a href="#" class="header__logo-link">
                             <svg class="header__logo-img" viewBox="0 0 192 65">
@@ -191,6 +200,7 @@
                         <div class="header__cart-wrap">
                             <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
                             <span class="header__cart-notice">3</span>
+                        
                             <div class="header__cart-list">
                                 <!-- No cart: header__cart-list--no-cart -->
                                 <img src="./assets/img/no-cart.png" alt="" class="header__cart-no-cart-img">
@@ -334,29 +344,31 @@
                     </div>
                 </div>
                 <!-- End header with search-->
-            </div>
-            <ul class="header__sort-bar">
-                <li class="header__sort-item"><a href="" class="header__sort-link">Liên quan</a></li>
-                <li class="header__sort-item header__sort-item--active"><a href="" class="header__sort-link">Mới nhất</a></li>
-                <li class="header__sort-item"><a href="" class="header__sort-link">Bán chạy</a></li>
-                <li class="header__sort-item">
-                    <div class="header__sort-price">
-                        Giá
-                        <div class="header__sort-price-icon">
-                            <i class="fa-solid fa-angle-up"></i>
-                            <i class="fa-solid fa-angle-down"></i>
+                <!-- Begin header sort bar-->
+                <ul class="header__sort-bar">
+                    <li class="header__sort-item"><a href="" class="header__sort-link">Liên quan</a></li>
+                    <li class="header__sort-item header__sort-item--active"><a href="" class="header__sort-link">Mới nhất</a></li>
+                    <li class="header__sort-item"><a href="" class="header__sort-link">Bán chạy</a></li>
+                    <li class="header__sort-item">
+                        <div class="header__sort-price">
+                            Giá
+                            <div class="header__sort-price-icon">
+                                <i class="fa-solid fa-angle-up"></i>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <ul class="header__sort-price-list">
+                                <li class="header__sort-price-item">
+                                    <a href="" class="header__sort-price-link">Giá: Cao đến thấp</a>
+                                </li>
+                                <li class="header__sort-price-item">
+                                    <a href="" class="header__sort-price-link">Giá: Thấp đến cao</a>
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="header__sort-price-list">
-                            <li class="header__sort-price-item">
-                                <a href="" class="header__sort-price-link">Giá: Cao đến thấp</a>
-                            </li>
-                            <li class="header__sort-price-item">
-                                <a href="" class="header__sort-price-link">Giá: Thấp đến cao</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+                <!-- End header sort bar-->
+            </div>
         </header>
 
         <div id="app__container">
