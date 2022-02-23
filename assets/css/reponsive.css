@@ -11,10 +11,13 @@
     .display-on-mobile-tablet {
         display: block;
     }
+<<<<<<< HEAD
     /* test -fix */
     .home-product__pagination {
         display: none;
     }
+=======
+>>>>>>> 1a2730da90fb05b156184ab2362f7a852f740af9
 
     .header {
         position: fixed;
@@ -36,10 +39,13 @@
         display: none;
     }
 
+<<<<<<< HEAD
     .header__sort-bar {
         display: flex;
     }
 
+=======
+>>>>>>> 1a2730da90fb05b156184ab2362f7a852f740af9
     .app__container {
         margin-top: var(--header-height);
     }
