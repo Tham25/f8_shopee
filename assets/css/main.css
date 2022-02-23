@@ -493,7 +493,7 @@
 }
 
 .header__mobile-search-icon {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: var(--white-color);
 }
 
@@ -693,6 +693,7 @@
 
 /* Begin: Header sort bar - Trên mobile và tablet*/
 .header__sort-bar {
+    position: absolute;
     display: none;
     list-style:none;
     padding-left: 0;
@@ -733,6 +734,7 @@
 }
 
 .header__sort-price-icon {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-left: 4px;

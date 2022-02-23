@@ -24,6 +24,12 @@
         right: 0;
     }
 
+    /* .header__search {
+        position: absolute;
+        top: var(--header-height);
+        z-index: 1;
+    } */
+
     .header__cart-list {
         position: fixed;
         top: var(--header-height);
