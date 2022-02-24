@@ -11,10 +11,6 @@
     .display-on-mobile-tablet {
         display: block;
     }
-    /* test -fix */
-    .home-product__pagination {
-        display: none;
-    }
 
     .header {
         position: fixed;
@@ -40,8 +36,8 @@
         display: flex;
     }
 
-    .app__container {
-        margin-top: var(--header-height);
+    #app__container {
+        margin-top: calc(var(--header-height) + 40px);
     }
 }
 
@@ -112,6 +108,20 @@
     .header__mobile-name {
         font-size: 1.8rem;
         line-height: 2rem;
+    }
+
+    .container__wrapper {
+        margin: 0 4px;
+    }
+
+    .pagination-item {
+        margin: 0;
+    }
+
+    .pagination__link {
+        --height: 28px;
+        font-size: 1.6rem;
+        min-width: 36px;
     }
 
 }

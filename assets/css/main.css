@@ -1,3 +1,7 @@
+.app {
+    overflow: hidden;
+}
+
 .header {
     height: var(--header-height);
     background-image: linear-gradient(0, #fe6433, #f53e2d);
@@ -1419,6 +1423,7 @@ i.home-product-item__like-fill {
 /* phan trang */
 .home-product__pagination {
     margin: 48px 0 32px;
+    padding-left: 0;
 }
 
 /* ==============End Container============== */
