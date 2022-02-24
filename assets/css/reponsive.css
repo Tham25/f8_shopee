@@ -39,6 +39,10 @@
     #app__container {
         margin-top: calc(var(--header-height) + 40px);
     }
+
+    .container__wrapper {
+        padding-top: 8px;
+    }
 }
 
 /* Tablet */
