@@ -818,10 +818,17 @@
 
 .header__sort-item--active .header__sort-link{
     color: var(--primary-color);
+    position: relative;
 }
 
-.header__sort-item--active  {
-    border-bottom: 2px solid var(--primary-color);
+.header__sort-item--active .header__sort-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 30px;
 }
 
 .header__sort-link {
