@@ -108,6 +108,7 @@
             opacity: 1;
         }
     }
+
     .header__logo-img {
         width: 120px;
     }
@@ -131,5 +132,25 @@
         min-width: 36px;
     }
 
+    .footer__content {
+        padding: 50px 16px;
+    }
+
+    .footer__policy-list {
+        flex-direction: column;
+    }
+    .footer__policy-list-item {
+        border-left-color: transparent;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__policy-list-item a {
+        border-left-color: transparent;
+        padding: 8px 0;
+        border-top: 1px solid #f5dddd;
+        width: 260px;
+    }
 }
 

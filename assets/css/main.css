@@ -1577,15 +1577,20 @@ i.home-product-item__like-fill {
     font-size: 1.4rem;
 }
 
+.footer__policy-list-item {
+    border-left: 1px solid #ccc;
+}
+
 .footer__policy-list-item a {
     padding: 0 20px;
     text-decoration: none;
     color: currentColor;
-    border-left: 1px solid #ccc;
+    display: block;
+    text-align: center;
 }
 
-.footer__policy-list-item:first-child a {
-    border-left: 1px solid transparent;
+.footer__policy-list-item:first-child {
+    border-color: transparent;
 }
 
 .footer__info-list {
@@ -1604,7 +1609,9 @@ i.home-product-item__like-fill {
 }
 
 .footer__info-item {
-    padding: 4px 0;
+    padding: 4px 16px;
     font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-align: center;
 }
 /* ==============Start footer============== */
