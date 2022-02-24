@@ -174,4 +174,12 @@
         border-top: 1px solid #f5dddd;
         width: 260px;
     }
+
+    .home-product-item__rating {
+        font-size: 0.6rem;
+    }
+
+    .home-product-item__sold {
+        font-size: 1rem;
+    }
 }
